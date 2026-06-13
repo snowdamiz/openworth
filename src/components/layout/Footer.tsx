@@ -19,8 +19,8 @@ export function Footer() {
               </h3>
             </div>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Building software that matters. SaaS products, open source tools,
-              and AI/ML solutions for the modern developer ecosystem.
+              Building software across creator tools, developer systems,
+              crypto rails, desktop agents, languages, and games.
             </p>
             <div className="mt-5 flex gap-2">
               {socialLinks.map((link) => (
@@ -40,7 +40,7 @@ export function Footer() {
 
           {/* Quick links */}
           <div className="md:col-span-3 md:col-start-7">
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
+            <h4 className="mb-4 text-sm font-semibold uppercase text-foreground">
               Navigation
             </h4>
             <ul className="space-y-2.5">
@@ -59,7 +59,7 @@ export function Footer() {
 
           {/* Contact */}
           <div className="md:col-span-3">
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-foreground">
+            <h4 className="mb-4 text-sm font-semibold uppercase text-foreground">
               Contact
             </h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
@@ -89,7 +89,7 @@ export function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
           <p>&copy; {new Date().getFullYear()} OpenWorth. All rights reserved.</p>
-          <p>Crafted with care for the developer community.</p>
+          <p>Built for useful software in whatever shape it needs.</p>
         </div>
       </div>
     </footer>

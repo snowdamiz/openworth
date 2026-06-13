@@ -42,7 +42,7 @@ export function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2 text-xl font-bold tracking-tight"
+          className="flex items-center gap-2 text-xl font-bold"
         >
           <LogoIcon size={26} />
           <span>

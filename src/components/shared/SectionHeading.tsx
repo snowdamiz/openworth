@@ -21,11 +21,11 @@ export function SectionHeading({
       )}
     >
       {label && (
-        <span className="mb-3 inline-block rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-widest text-primary">
+        <span className="mb-3 inline-block rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium uppercase text-primary">
           {label}
         </span>
       )}
-      <h2 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
+      <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">
         {title}
       </h2>
       {subtitle && (

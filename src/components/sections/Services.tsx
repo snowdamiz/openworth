@@ -100,7 +100,7 @@ export function Services() {
         <AnimatedSection>
           <SectionHeading
             title="What We Build"
-            subtitle="From SaaS platforms to open source libraries — we ship across the stack."
+            subtitle="Products, tools, runtimes, and experiments across the stack, from consumer-facing apps to infrastructure for builders."
             label="Services"
           />
         </AnimatedSection>

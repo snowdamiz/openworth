@@ -7,10 +7,10 @@ import { stats } from "@/lib/constants"
 import { LogoIcon } from "@/components/shared/Logo"
 
 const terminalLines = [
-  { prompt: true, text: "npx forge init my-app" },
-  { prompt: false, text: "  Scaffolding project..." },
-  { prompt: false, text: "  Installing dependencies..." },
-  { prompt: false, text: '  Done. Run "cd my-app && npm dev"' },
+  { prompt: true, text: "openworth portfolio --status" },
+  { prompt: false, text: "  released    team556.com · meshlang.dev" },
+  { prompt: false, text: "  beta        clippster.app · xeroshell.com · slopheroes.xyz" },
+  { prompt: false, text: "  building    tokend.tv · hyperpush.dev" },
   { prompt: true, text: "" },
 ]
 
@@ -43,7 +43,7 @@ export function Hero() {
   const scrollTo = useScrollTo()
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden px-4 pt-16">
+    <section className="relative flex min-h-[88svh] items-center overflow-hidden px-4 pb-14 pt-24">
       {/* Dot grid background */}
       <div className="dot-grid pointer-events-none absolute inset-0" />
 
@@ -73,7 +73,7 @@ export function Hero() {
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              Now shipping Forge CLI v2.0
+              Seven products, zero fixed category
             </span>
           </motion.div>
 
@@ -81,11 +81,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
+            className="mt-6 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl"
           >
-            Software built for
+            Software that goes
             <br />
-            <GradientText>developers who ship</GradientText>
+            <GradientText>where the idea points</GradientText>
           </motion.h1>
 
           <motion.p
@@ -94,8 +94,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.35 }}
             className="mt-5 max-w-lg text-lg leading-relaxed text-muted-foreground"
           >
-            We build SaaS platforms, open source tools, and AI-powered
-            solutions. Opinionated software that gets out of your way.
+            OpenWorth builds across creator tools, developer infrastructure,
+            crypto rails, desktop agents, programming languages, and games.
+            The common thread is simple: useful software, shipped with taste.
           </motion.p>
 
           <motion.div
@@ -109,7 +110,7 @@ export function Hero() {
               className="gradient-bg border-0 text-white hover:opacity-90"
               onClick={() => scrollTo("projects")}
             >
-              View Projects
+              View Portfolio
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" variant="outline" asChild>

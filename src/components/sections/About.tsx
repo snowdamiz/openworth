@@ -41,13 +41,13 @@ export function About() {
             <AnimatedSection>
               <SectionHeading title="Who We Are" label="About" align="left" />
               <p className="text-lg leading-relaxed text-muted-foreground">
-                OpenWorth was founded on the belief that great software should be{" "}
-                <GradientText>open, intelligent, and built with developers in mind.</GradientText>
+                OpenWorth is a software company for ideas that do not sit still:{" "}
+                <GradientText>creator apps, developer systems, markets, languages, and games.</GradientText>
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                We combine deep technical expertise with a product-first mindset
-                to ship tools and platforms that developers actually want to use.
-                No bloat, no fluff — just software that works.
+                Some projects are polished and released. Some are public betas.
+                Some are still being shaped in the open. The portfolio is varied
+                on purpose because the company is not limited to one vertical.
               </p>
             </AnimatedSection>
           </div>

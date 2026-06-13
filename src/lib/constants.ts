@@ -1,8 +1,6 @@
 import type { LucideIcon } from "lucide-react"
 import {
-  Cloud,
   Code,
-  Brain,
   Github,
   Twitter,
   Linkedin,
@@ -11,6 +9,15 @@ import {
   Sparkles,
   Users,
   ExternalLink,
+  Clapperboard,
+  Gamepad2,
+  Network,
+  Shield,
+  TerminalSquare,
+  Bug,
+  Blocks,
+  Workflow,
+  PackageOpen,
 } from "lucide-react"
 
 export type NavItem = {
@@ -34,83 +41,148 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "SaaS Products",
+    title: "Independent Products",
     description:
-      "Production-grade platforms built for scale, reliability, and exceptional user experience.",
-    icon: Cloud,
-    features: ["Multi-tenant architecture", "99.9% uptime SLA", "Real-time analytics"],
+      "From creator workflows to games and payments, we follow the product instead of forcing it into one category.",
+    icon: PackageOpen,
+    features: ["Consumer apps", "Desktop software", "Experimental markets"],
   },
   {
-    title: "Open Source Tools",
+    title: "Developer Systems",
     description:
-      "Developer tools and libraries that solve real problems. Built in the open, battle-tested by the community.",
+      "Languages, agent studios, observability, and infrastructure tools built for people who make software.",
     icon: Code,
-    features: ["MIT licensed", "Community-driven", "Production ready"],
+    features: ["Open source", "Local-first tools", "Distributed runtimes"],
   },
   {
-    title: "AI/ML Solutions",
+    title: "Applied AI & Automation",
     description:
-      "Intelligent systems powered by cutting-edge machine learning — from NLP to custom model training.",
-    icon: Brain,
-    features: ["Custom model training", "Edge deployment", "Sub-ms inference"],
+      "AI shows up where it helps the workflow: clipping live streams, triaging errors, or coordinating coding agents.",
+    icon: Workflow,
+    features: ["Creator automation", "Agent workflows", "AI-assisted triage"],
   },
 ]
 
 export type Project = {
   name: string
+  shortName: string
   description: string
   techStack: string[]
-  status: "Active" | "Beta" | "Coming Soon" | "Open Source"
+  status: "Released" | "Beta" | "In Progress"
   href?: string
+  repoHref?: string
+  icon: LucideIcon
+  logoSrc: string
+  logoBackground: string
+  accent: string
+  accentSecondary: string
   featured?: boolean
 }
 
 export const projects: Project[] = [
   {
-    name: "Nexus Platform",
+    name: "Clippster",
+    shortName: "CL",
     description:
-      "Unified analytics dashboard for SaaS metrics with real-time data pipelines and customizable reporting.",
-    techStack: ["TypeScript", "React", "PostgreSQL", "Redis"],
-    status: "Active",
-    featured: true,
-  },
-  {
-    name: "Forge CLI",
-    description:
-      "Zero-config scaffolding tool for full-stack applications. Supports multiple frameworks and deployment targets.",
-    techStack: ["Rust", "Node.js", "Docker"],
-    status: "Open Source",
-    href: "https://github.com/openworth",
-  },
-  {
-    name: "Cortex Engine",
-    description:
-      "High-performance ML inference engine optimized for edge deployment with sub-millisecond latency.",
-    techStack: ["Python", "ONNX", "C++", "CUDA"],
+      "A creator desktop app for turning streams into clips with live DVR, AI highlight detection, captions, timeline editing, campaigns, and team workflows.",
+    techStack: ["Creator tools", "AI highlights", "Video editor", "Team campaigns"],
     status: "Beta",
+    href: "https://clippster.app",
+    icon: Clapperboard,
+    logoSrc: "https://clippster.app/logo-icon.svg",
+    logoBackground: "#0a0a0b",
+    accent: "#06b6d4",
+    accentSecondary: "#8b5cf6",
     featured: true,
   },
   {
-    name: "Prism UI",
+    name: "Team556",
+    shortName: "556",
     description:
-      "Accessible, themeable component library for React with first-class dark mode and animation support.",
-    techStack: ["TypeScript", "React", "Tailwind CSS"],
-    status: "Open Source",
-    href: "https://github.com/openworth",
+      "A released Solana utility-token ecosystem for the 2A and veteran community, including Digital Armory, private transactions, and retailer payment tools.",
+    techStack: ["Solana", "Payments", "Digital Armory", "Community"],
+    status: "Released",
+    href: "https://team556.com",
+    icon: Shield,
+    logoSrc: "https://www.team556.com/icon.png?1f6ab42aebdab08e",
+    logoBackground: "#0f172a",
+    accent: "#9945ff",
+    accentSecondary: "#14f195",
+    featured: true,
   },
   {
-    name: "Signal",
+    name: "tokend",
+    shortName: "TD",
     description:
-      "Real-time anomaly detection service for infrastructure monitoring with intelligent alerting.",
-    techStack: ["Go", "Kafka", "TensorFlow", "Grafana"],
-    status: "Active",
+      "Creator capital markets for verified humans: real scarcity, fair bonding curves, locked liquidity, and live trading alongside streams.",
+    techStack: ["Creator markets", "KYC", "Bonding curves", "Live trading"],
+    status: "In Progress",
+    href: "https://tokend.tv",
+    repoHref: "https://github.com/Openworth/token-loom-app",
+    icon: Blocks,
+    logoSrc: "/logos/tokend-icon.svg",
+    logoBackground: "#0a0a0b",
+    accent: "#5eead4",
+    accentSecondary: "#f472b6",
+    featured: true,
   },
   {
-    name: "Aether",
+    name: "Xero",
+    shortName: "XE",
     description:
-      "Next-generation natural language interface for database querying — ask questions in plain English.",
-    techStack: ["Python", "LLMs", "SQL", "React"],
-    status: "Coming Soon",
+      "A local-first desktop studio for custom coding agents, visual workflows, remote sessions, browser approvals, and bring-your-own model keys.",
+    techStack: ["Desktop app", "Coding agents", "Workflows", "Local-first"],
+    status: "Beta",
+    href: "https://xeroshell.com",
+    icon: TerminalSquare,
+    logoSrc: "https://xeroshell.com/icon-logo.svg",
+    logoBackground: "#10161a",
+    accent: "#d4a574",
+    accentSecondary: "#4e4337",
+    featured: true,
+  },
+  {
+    name: "Mesh",
+    shortName: "MSH",
+    description:
+      "A programming language built for distributed systems with @cluster annotations, runtime failover, load balancing, native binaries, and server stdlib.",
+    techStack: ["Language", "Distributed systems", "LLVM", "Server stdlib"],
+    status: "Released",
+    href: "https://meshlang.dev",
+    icon: Network,
+    logoSrc: "https://meshlang.dev/logo-icon-white.svg",
+    logoBackground: "#0f0f0f",
+    accent: "#f5f5f5",
+    accentSecondary: "#dea584",
+    featured: true,
+  },
+  {
+    name: "Hyperpush",
+    shortName: "HP",
+    description:
+      "Open-source error tracking with token-funded bounties, public bug boards, Solana program errors, and AI-assisted error grouping and fixes.",
+    techStack: ["Error tracking", "Open source", "Solana", "Bounties"],
+    status: "In Progress",
+    href: "https://hyperpush.dev",
+    icon: Bug,
+    logoSrc: "https://hyperpush.dev/favicon.svg",
+    logoBackground: "#051009",
+    accent: "#59c184",
+    accentSecondary: "#fef3aa",
+  },
+  {
+    name: "Slop Heroes",
+    shortName: "SH",
+    description:
+      "A fast voxel arena hero shooter where heroes grapple, blink, burn, and bend time through tight capture-the-flag fights.",
+    techStack: ["Voxel game", "Hero shooter", "Multiplayer", "CTF"],
+    status: "Beta",
+    href: "https://slopheroes.xyz",
+    icon: Gamepad2,
+    logoSrc: "https://slopheroes.xyz/favicon.svg",
+    logoBackground: "#09090b",
+    accent: "#60f4ff",
+    accentSecondary: "#ff9435",
   },
 ]
 
@@ -122,30 +194,30 @@ export type ValueItem = {
 
 export const values: ValueItem[] = [
   {
-    title: "Open Source First",
+    title: "Wide by design",
     description:
-      "We build in the open. Transparency drives trust, and community feedback makes our software better.",
-    icon: ShieldCheck,
-  },
-  {
-    title: "AI-Powered",
-    description:
-      "We embed intelligent capabilities into everything we build — from developer tools to enterprise platforms.",
+      "OpenWorth is not a single-category studio. If the idea needs a language, a game, a desktop app, or a token system, we build there.",
     icon: Sparkles,
   },
   {
-    title: "Developer-Centric",
+    title: "Built where possible in the open",
     description:
-      "Built by developers, for developers. Clean APIs, great docs, and thoughtful DX are non-negotiable.",
+      "Several projects publish source, docs, or public product surfaces so users can inspect the work and follow the roadmap.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Practical before polished theater",
+    description:
+      "The portfolio is opinionated, technical, and hands-on: shipping beats category purity, and usefulness beats vague positioning.",
     icon: Users,
   },
 ]
 
 export const stats = [
-  { value: "50K+", label: "Downloads / mo" },
-  { value: "12", label: "Open Source Repos" },
-  { value: "99.9%", label: "Uptime" },
-  { value: "4", label: "Products Shipped" },
+  { value: "7", label: "Featured projects" },
+  { value: "2", label: "Released products" },
+  { value: "3", label: "Public betas" },
+  { value: "2", label: "In progress" },
 ]
 
 export type SocialLink = {

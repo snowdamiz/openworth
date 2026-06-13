@@ -44,7 +44,7 @@ export function LogoFull({ className }: { className?: string }) {
   return (
     <span className={cn("flex items-center gap-2", className)}>
       <LogoIcon />
-      <span className="text-xl font-bold tracking-tight">
+      <span className="text-xl font-bold">
         <span className="text-foreground">Open</span>
         <span className="gradient-text">Worth</span>
       </span>

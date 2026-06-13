@@ -1,0 +1,8 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="tokend">
+  <rect width="180" height="180" rx="24" fill="#0A0A0B"/>
+  <g transform="translate(-12 -9) scale(3.09)" fill="none" stroke="#5EEAD4" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 15.5H38C48.5 15.5 56 23 56 32C56 41 48.5 48.5 38 48.5H26"/>
+    <path d="M10 30H38"/>
+    <path d="M26 30V48.5"/>
+  </g>
+</svg>

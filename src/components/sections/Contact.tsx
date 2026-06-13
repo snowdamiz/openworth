@@ -24,18 +24,18 @@ export function Contact() {
               <LogoIcon size={120} />
             </div>
 
-            <span className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-widest text-primary">
-              Get Started
+            <span className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium uppercase text-primary">
+              Contact
             </span>
 
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-              Let's build{" "}
-              <GradientText>something together</GradientText>
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Building something that{" "}
+              <GradientText>belongs here?</GradientText>
             </h2>
 
             <p className="mx-auto mt-4 max-w-md text-base text-muted-foreground">
-              Have a project in mind? Want to contribute to our open source
-              work? We're always looking for collaborators.
+              Reach out about collaborations, open source work, partnerships,
+              or one of the products in the OpenWorth portfolio.
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -57,7 +57,7 @@ export function Contact() {
                   rel="noopener noreferrer"
                 >
                   <Github className="mr-2 h-4 w-4" />
-                  Open Source
+                  GitHub
                 </a>
               </Button>
             </div>
