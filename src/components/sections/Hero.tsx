@@ -8,9 +8,8 @@ import { LogoIcon } from "@/components/shared/Logo"
 
 const terminalLines = [
   { prompt: true, text: "openworth portfolio --status" },
-  { prompt: false, text: "  released    team556.com" },
   { prompt: false, text: "  beta        clippster.app · xeroshell.com" },
-  { prompt: false, text: "  building    tokend.tv" },
+  { prompt: false, text: "  building    tokend.tv · team556.com" },
   { prompt: true, text: "" },
 ]
 

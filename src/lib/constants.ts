@@ -95,21 +95,6 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    name: "Team556",
-    shortName: "556",
-    description:
-      "A released Solana utility-token ecosystem for the 2A and veteran community, including Digital Armory, private transactions, and retailer payment tools.",
-    techStack: ["Solana", "Payments", "Digital Armory", "Community"],
-    status: "Released",
-    href: "https://team556.com",
-    icon: Shield,
-    logoSrc: "https://www.team556.com/icon.png?1f6ab42aebdab08e",
-    logoBackground: "#0f172a",
-    accent: "#9945ff",
-    accentSecondary: "#14f195",
-    featured: true,
-  },
-  {
     name: "tokend",
     shortName: "TD",
     description:
@@ -137,6 +122,21 @@ export const projects: Project[] = [
     logoBackground: "#10161a",
     accent: "#d4a574",
     accentSecondary: "#4e4337",
+    featured: true,
+  },
+  {
+    name: "Team556",
+    shortName: "556",
+    description:
+      "A Solana utility-token ecosystem for the 2A and veteran community, including Digital Armory, private transactions, and retailer payment tools.",
+    techStack: ["Solana", "Payments", "Digital Armory", "Community"],
+    status: "In Progress",
+    href: "https://team556.com",
+    icon: Shield,
+    logoSrc: "https://www.team556.com/icon.png?1f6ab42aebdab08e",
+    logoBackground: "#0f172a",
+    accent: "#9945ff",
+    accentSecondary: "#14f195",
     featured: true,
   },
   {
@@ -218,9 +218,8 @@ export const values: ValueItem[] = [
 
 export const stats = [
   { value: "4", label: "Featured projects" },
-  { value: "1", label: "Released product" },
   { value: "2", label: "Public betas" },
-  { value: "1", label: "In progress" },
+  { value: "2", label: "In progress" },
 ]
 
 export type SocialLink = {
