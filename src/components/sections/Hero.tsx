@@ -114,7 +114,7 @@ export function Hero() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="https://github.com/openworth" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Openworth" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-4 w-4" />
                 GitHub
               </a>

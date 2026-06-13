@@ -65,20 +65,20 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li>
                 <a
-                  href="mailto:hello@openworth.io"
+                  href="mailto:support@openworth.io"
                   className="transition-colors hover:text-primary"
                 >
-                  hello@openworth.io
+                  support@openworth.io
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/openworth"
+                  href="https://github.com/Openworth"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-primary"
                 >
-                  github.com/openworth
+                  github.com/Openworth
                 </a>
               </li>
             </ul>

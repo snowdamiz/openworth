@@ -44,15 +44,15 @@ export function Contact() {
                 className="gradient-bg border-0 text-white hover:opacity-90"
                 asChild
               >
-                <a href="mailto:hello@openworth.io">
+                <a href="mailto:support@openworth.io">
                   <Mail className="mr-2 h-4 w-4" />
-                  hello@openworth.io
+                  support@openworth.io
                   <ArrowUpRight className="ml-1.5 h-3.5 w-3.5" />
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a
-                  href="https://github.com/openworth"
+                  href="https://github.com/Openworth"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

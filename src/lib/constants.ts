@@ -2,8 +2,6 @@ import type { LucideIcon } from "lucide-react"
 import {
   Code,
   Github,
-  Twitter,
-  Linkedin,
   Mail,
   ShieldCheck,
   Sparkles,
@@ -118,7 +116,6 @@ export const projects: Project[] = [
     techStack: ["Creator markets", "KYC", "Bonding curves", "Live trading"],
     status: "In Progress",
     href: "https://tokend.tv",
-    repoHref: "https://github.com/Openworth/token-loom-app",
     icon: Blocks,
     logoSrc: "/logos/tokend-icon.svg",
     logoBackground: "#0a0a0b",
@@ -227,10 +224,8 @@ export type SocialLink = {
 }
 
 export const socialLinks: SocialLink[] = [
-  { icon: Github, href: "https://github.com/openworth", label: "GitHub" },
-  { icon: Twitter, href: "https://x.com/openworth", label: "X (Twitter)" },
-  { icon: Linkedin, href: "https://linkedin.com/company/openworth", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@openworth.io", label: "Email" },
+  { icon: Github, href: "https://github.com/Openworth", label: "GitHub" },
+  { icon: Mail, href: "mailto:support@openworth.io", label: "Email" },
 ]
 
 export { ExternalLink }
