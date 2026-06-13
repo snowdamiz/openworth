@@ -8,9 +8,9 @@ import { LogoIcon } from "@/components/shared/Logo"
 
 const terminalLines = [
   { prompt: true, text: "openworth portfolio --status" },
-  { prompt: false, text: "  released    team556.com · meshlang.dev" },
-  { prompt: false, text: "  beta        clippster.app · xeroshell.com · slopheroes.xyz" },
-  { prompt: false, text: "  building    tokend.tv · hyperpush.dev" },
+  { prompt: false, text: "  released    team556.com" },
+  { prompt: false, text: "  beta        clippster.app · xeroshell.com" },
+  { prompt: false, text: "  building    tokend.tv" },
   { prompt: true, text: "" },
 ]
 
@@ -73,7 +73,7 @@ export function Hero() {
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              Seven products, zero fixed category
+              Four public products, zero fixed category
             </span>
           </motion.div>
 

@@ -3,7 +3,7 @@ import { ExternalLink, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { AnimatedSection } from "@/components/shared/AnimatedSection"
 import { SectionHeading } from "@/components/shared/SectionHeading"
-import { projects, type Project } from "@/lib/constants"
+import { visibleProjects, type Project } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
 const statusStyles: Record<string, string> = {
@@ -144,13 +144,13 @@ export function Projects() {
         <AnimatedSection>
           <SectionHeading
             title="Featured Projects"
-            subtitle="Real products across creator software, developer tooling, crypto rails, programming languages, observability, and games."
+            subtitle="Real products across creator software, community payments, crypto rails, and desktop agent tooling."
             label="Portfolio"
           />
         </AnimatedSection>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, i) => (
+          {visibleProjects.map((project, i) => (
             <ProjectCard key={project.name} project={project} index={i} />
           ))}
         </div>

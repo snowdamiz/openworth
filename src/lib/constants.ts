@@ -75,6 +75,7 @@ export type Project = {
   accent: string
   accentSecondary: string
   featured?: boolean
+  hidden?: boolean
 }
 
 export const projects: Project[] = [
@@ -152,6 +153,7 @@ export const projects: Project[] = [
     accent: "#f5f5f5",
     accentSecondary: "#dea584",
     featured: true,
+    hidden: true,
   },
   {
     name: "Hyperpush",
@@ -166,6 +168,7 @@ export const projects: Project[] = [
     logoBackground: "#051009",
     accent: "#59c184",
     accentSecondary: "#fef3aa",
+    hidden: true,
   },
   {
     name: "Slop Heroes",
@@ -180,8 +183,11 @@ export const projects: Project[] = [
     logoBackground: "#09090b",
     accent: "#60f4ff",
     accentSecondary: "#ff9435",
+    hidden: true,
   },
 ]
+
+export const visibleProjects = projects.filter((project) => !project.hidden)
 
 export type ValueItem = {
   title: string
@@ -211,10 +217,10 @@ export const values: ValueItem[] = [
 ]
 
 export const stats = [
-  { value: "7", label: "Featured projects" },
-  { value: "2", label: "Released products" },
-  { value: "3", label: "Public betas" },
-  { value: "2", label: "In progress" },
+  { value: "4", label: "Featured projects" },
+  { value: "1", label: "Released product" },
+  { value: "2", label: "Public betas" },
+  { value: "1", label: "In progress" },
 ]
 
 export type SocialLink = {
