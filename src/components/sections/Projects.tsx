@@ -144,7 +144,7 @@ export function Projects() {
         <AnimatedSection>
           <SectionHeading
             title="Featured Projects"
-            subtitle="Real products across creator software, community payments, crypto rails, and desktop agent tooling."
+            subtitle="Real products across creator software and crypto rails."
             label="Portfolio"
           />
         </AnimatedSection>

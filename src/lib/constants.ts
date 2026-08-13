@@ -8,11 +8,6 @@ import {
   Users,
   ExternalLink,
   Clapperboard,
-  Gamepad2,
-  Network,
-  Shield,
-  TerminalSquare,
-  Bug,
   Blocks,
   Workflow,
   PackageOpen,
@@ -109,82 +104,6 @@ export const projects: Project[] = [
     accentSecondary: "#f472b6",
     featured: true,
   },
-  {
-    name: "Xero",
-    shortName: "XE",
-    description:
-      "A local-first desktop studio for custom coding agents, visual workflows, remote sessions, browser approvals, and bring-your-own model keys.",
-    techStack: ["Desktop app", "Coding agents", "Workflows", "Local-first"],
-    status: "Beta",
-    href: "https://xeroshell.com",
-    icon: TerminalSquare,
-    logoSrc: "https://xeroshell.com/icon-logo.svg",
-    logoBackground: "#10161a",
-    accent: "#d4a574",
-    accentSecondary: "#4e4337",
-    featured: true,
-  },
-  {
-    name: "Team556",
-    shortName: "556",
-    description:
-      "A Solana utility-token ecosystem for the 2A and veteran community, including Digital Armory, private transactions, and retailer payment tools.",
-    techStack: ["Solana", "Payments", "Digital Armory", "Community"],
-    status: "In Progress",
-    href: "https://team556.com",
-    icon: Shield,
-    logoSrc: "https://www.team556.com/icon.png?1f6ab42aebdab08e",
-    logoBackground: "#0f172a",
-    accent: "#9945ff",
-    accentSecondary: "#14f195",
-    featured: true,
-  },
-  {
-    name: "Mesh",
-    shortName: "MSH",
-    description:
-      "A programming language built for distributed systems with @cluster annotations, runtime failover, load balancing, native binaries, and server stdlib.",
-    techStack: ["Language", "Distributed systems", "LLVM", "Server stdlib"],
-    status: "Released",
-    href: "https://meshlang.dev",
-    icon: Network,
-    logoSrc: "https://meshlang.dev/logo-icon-white.svg",
-    logoBackground: "#0f0f0f",
-    accent: "#f5f5f5",
-    accentSecondary: "#dea584",
-    featured: true,
-    hidden: true,
-  },
-  {
-    name: "Hyperpush",
-    shortName: "HP",
-    description:
-      "Open-source error tracking with token-funded bounties, public bug boards, Solana program errors, and AI-assisted error grouping and fixes.",
-    techStack: ["Error tracking", "Open source", "Solana", "Bounties"],
-    status: "In Progress",
-    href: "https://hyperpush.dev",
-    icon: Bug,
-    logoSrc: "https://hyperpush.dev/favicon.svg",
-    logoBackground: "#051009",
-    accent: "#59c184",
-    accentSecondary: "#fef3aa",
-    hidden: true,
-  },
-  {
-    name: "Slop Heroes",
-    shortName: "SH",
-    description:
-      "A fast voxel arena hero shooter where heroes grapple, blink, burn, and bend time through tight capture-the-flag fights.",
-    techStack: ["Voxel game", "Hero shooter", "Multiplayer", "CTF"],
-    status: "Beta",
-    href: "https://slopheroes.xyz",
-    icon: Gamepad2,
-    logoSrc: "https://slopheroes.xyz/favicon.svg",
-    logoBackground: "#09090b",
-    accent: "#60f4ff",
-    accentSecondary: "#ff9435",
-    hidden: true,
-  },
 ]
 
 export const visibleProjects = projects.filter((project) => !project.hidden)
@@ -217,9 +136,9 @@ export const values: ValueItem[] = [
 ]
 
 export const stats = [
-  { value: "4", label: "Featured projects" },
-  { value: "2", label: "Public betas" },
-  { value: "2", label: "In progress" },
+  { value: "2", label: "Featured projects" },
+  { value: "1", label: "Public beta" },
+  { value: "1", label: "In progress" },
 ]
 
 export type SocialLink = {
